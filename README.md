@@ -12,9 +12,11 @@ then include the following function:
     loader = FileSystemLoader(directory)
     env = Environment(loader=loader)
     template = env.get_template(template_name)
-    return template.render(**kwargs)```
+    return template.render(**kwargs)
+```
 
-include in your python file directory a file that uses the Jinja2 syntax, can be an html file for simplicity (e.g. myTemplate.html)
+include in your python file directory a file that uses the Jinja2 syntax, 
+default to html (e.g. myTemplate.html)
 
 render the string with the following:
 ```render_from_template('.', 'myTemplate.html', **data)```
