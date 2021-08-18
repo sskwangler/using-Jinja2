@@ -9,7 +9,8 @@ then in your python file import the following:
 ```from jinja2 import FileSystemLoader, Environment```
 
 then include the following function:
-```def render_from_template(directory, template_name, **kwargs):
+```
+def render_from_template(directory, template_name, **kwargs):
     loader = FileSystemLoader(directory)
     env = Environment(loader=loader)
     template = env.get_template(template_name)
