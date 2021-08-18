@@ -2,6 +2,7 @@
 easy Jinja2 templating
 
 ```pip install Jinja2``` (for python2)
+
 ```pip3 install Jinja2``` (these hold true for linux, please lookup OS specific pip cli arguments)
 
 then in your python file import the following:
